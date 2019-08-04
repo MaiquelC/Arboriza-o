@@ -1,0 +1,48 @@
+
+
+<html lang="pt-br">
+   <head>
+      <title>N° de tijolos para uma parede</title>
+      <meta charset="utf-8">
+      <style>
+       #conteudo {
+          font-family: calibri, arial, verdana;
+          background: #A52A2A;
+          font-size: 100%;
+          color: white;
+
+          padding: 10px 10px 10px 10px;
+          margin-top: 0px;
+          margin-right: 20px;
+          margin-bottom: 60px;
+          margin-left: 20px;
+        }
+      </style>
+   </head>
+   <body background="fundopp3.jpg" bgproperties="fixed">
+       <script>
+          // Pare!! N copie, assim vc n aprenderá a fazer!!!
+          // Calculando quantos tijolos serão necessários para uma parede
+          alt = prompt("Qual é a altura [em metros] da parede?", "");
+          comp = prompt("Qual é o comprimento [em metros] da parede?", "");
+          alt2 = prompt("Qual é a altura [em centímetros] do tijolo?[Pensado em como ele será colocado na parede]", "");
+          comp2 = prompt("Qual é o comprimento [em centímetros] do tijolo?[Pensado em como ele será colocado na parede]", "");
+          // Agora o calculo que se utiliza para saber o número de tijolos para uma parede
+          areap = alt * comp
+          areatt = alt2 * comp2
+          areatp = areap * 10000
+          nt = parseInt(areatp / areatt)
+      </script>
+        <DIV id="conteudo">
+        <br>
+        <h1><p><center>
+      <script>
+          // assim finalizando, graças ao meu pai que me disse pra fazer * 10000 
+          document.writeln("Você precisará de ", nt, " tijolos para esta parede", "");
+          // agora falta um pouco de css, fica pra outra hora
+      </script>
+        </h1>
+        </p> </center>
+   </body>
+</html>
+
